@@ -24,7 +24,7 @@ public class InformacoesUsuarioTest {
         navegador.findElement(By.id("lst-ib")).sendKeys("teste de velocidade");
 
         // Clicar no botão "Pesquisa Google"
-        ((ChromeDriver) navegador).findElementByXPath("//*[@id=\"tsf\"]/div[2]/div[3]/center/input[1])").click();
+        ((ChromeDriver) navegador).findElementByXPath("//*[@id=\"tsf\"]/div[2]/div[3]/center/input[1]").click();
 
 
 
