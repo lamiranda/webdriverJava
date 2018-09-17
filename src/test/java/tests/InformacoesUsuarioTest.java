@@ -21,14 +21,16 @@ public class InformacoesUsuarioTest {
        navegador.findElement(By.id("lst-ib")).click();
 
         // Digitar no campo que possui o id "lst-ib" o texto "teste"
+        navegador.findElement(By.id("lst-ib")).sendKeys("teste de velocidade");
 
-        // Clicar no botão com o name "btnk"
+        // Clicar no botão "Pesquisa Google"
+        ((ChromeDriver) navegador).findElementByXPath("//*[@id=\"tsf\"]/div[2]/div[3]/center/input[1])").click();
+
+
 
         //fechar o navegador
 
-        //validação
-        assertEquals(1, 1);
 
-    }
 
-}
+
+}}
