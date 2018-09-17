@@ -18,8 +18,8 @@ public class InformacoesUsuarioTest {
         //Navegando para a página do Google!
         navegador.get("https://www.bing.com/");
 
-        // Clicar no campo que possui o id "lst-ib"
-       navegador.findElement(By.id("lst-ib")).click();
+        // Clicar no campo que possui o id "sb_form_q"
+       navegador.findElement(By.id("sb_form_q")).click();
 
         // Digitar no campo que possui o id "sb_form_q" o texto "teste"
         navegador.findElement(By.id("sb_form_q")).sendKeys("teste de velocidade");
