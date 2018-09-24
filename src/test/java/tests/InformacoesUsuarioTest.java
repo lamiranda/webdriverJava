@@ -32,7 +32,7 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementByLinkText("www.minhaconexao.com.br")
 
 ;
-        }atch (Exception e){
+        }catch (Exception e){
             e.printStackTrace();
             fail();
         }
