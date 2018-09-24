@@ -29,7 +29,7 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementById("sb_form_go").click();
 
             //clicar no link que possui texto "www.minhaconexao.com.br"
-            ((ChromeDriver) navegador).findElementByLinkText("www.minhaconexao.com.br")
+            ((ChromeDriver) navegador).findElementByLinkText("www.minhaconexao.com.br").click();
 
 ;
         }catch (Exception e){
