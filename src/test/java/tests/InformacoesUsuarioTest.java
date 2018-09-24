@@ -31,7 +31,7 @@ public class InformacoesUsuarioTest {
             //clicar no link que possui texto "www.minhaconexao.com.br"
             ((ChromeDriver) navegador).findElementByLinkText("www.minhaconexao.com.br").click();
 
-;
+
         }catch (Exception e){
             e.printStackTrace();
             fail();
