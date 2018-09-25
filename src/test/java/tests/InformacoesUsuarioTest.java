@@ -29,7 +29,10 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementById("sb_form_go").click();
 
             //clicar no link que possui texto "www.minhaconexao.com.br"
-            ((ChromeDriver) navegador).findElementByLinkText("www.minhaconexao.com.br").click();
+            ((ChromeDriver) navegador).findElementByLinkText("Teste de Velocidade - TecMundo").click();
+
+            //Clicar no texto "Iniciar o teste
+            ((ChromeDriver) navegador).findElementByLinkText("nPerf").click();
 
 
         }catch (Exception e){
