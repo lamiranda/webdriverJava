@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class InformacoesUsuarioTest {
     @Test
     public void testAdicionarUmaInformacaoAdicionalDoUsuario(){
@@ -32,6 +34,7 @@ public class InformacoesUsuarioTest {
 
             //clicar no link que possui texto "Teste de Velocidade - TecMundo"
             ((ChromeDriver) navegador).findElementByLinkText("Teste de Velocidade - TecMundo").click();
+            navegador.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
             //Clicar no texto "Iniciar o teste"
             ((ChromeDriver) navegador).findElementByLinkText("Iniciar o teste").click();
