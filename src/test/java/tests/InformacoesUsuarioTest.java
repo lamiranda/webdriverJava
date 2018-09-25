@@ -23,11 +23,11 @@ public class InformacoesUsuarioTest {
             // Clicar no campo que possui o id "sb_form_q"
             navegador.findElement(By.id("sb_form_q")).click();
 
-            // Digitar no campo que possui o id "sb_form_q" o texto "teste"
+            // Digitar no campo que possui o id "sb_form_q" o texto "teste de velocidade"
             navegador.findElement(By.id("sb_form_q")).sendKeys("teste de velocidade");
 
             // Clicar no botão "Pesquisar"
-            ((ChromeDriver) navegador).findElementById("sb_form_q").click();
+            ((ChromeDriver) navegador).findElementById("sa_5003").click();
 
             //clicar no link que possui texto "www.minhaconexao.com.br"
             ((ChromeDriver) navegador).findElementByLinkText("Teste de Velocidade - TecMundo").click();
