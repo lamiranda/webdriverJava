@@ -34,6 +34,7 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementByLinkText("Teste de Velocidade - TecMundo").click();
 
             //Clicar no texto "Iniciar o teste"
+            ((ChromeDriver) navegador).findElementByLinkText("Iniciar o teste").click();
 
             //Fechar navegador
             navegador.quit();
