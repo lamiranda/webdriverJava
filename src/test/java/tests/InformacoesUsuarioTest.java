@@ -13,7 +13,8 @@ public class InformacoesUsuarioTest {
 
         try {
             //Abrindo o navegador
-            System.setProperty("webdriver.chrome.driver", "/Users/larissademiranda/Projects/chromedriver/chromedriver");
+
+            System.setProperty("webdriver.chrome.driver", "c:\\Selenium\\Drivers\\chromedriver.exe");
             WebDriver navegador = new ChromeDriver();
 
             //Navegando para a página do Google!
@@ -26,12 +27,12 @@ public class InformacoesUsuarioTest {
             navegador.findElement(By.id("sb_form_q")).sendKeys("teste de velocidade");
 
             // Clicar no botão "Pesquisar"
-            ((ChromeDriver) navegador).findElementById("sb_form_go").click();
+            ((ChromeDriver) navegador).findElementById("sb_form_q").click();
 
             //clicar no link que possui texto "www.minhaconexao.com.br"
             ((ChromeDriver) navegador).findElementByLinkText("Teste de Velocidade - TecMundo").click();
 
-            //Clicar no texto "Iniciar o teste
+            //Clicar no texto "Iniciar o teste"
             ((ChromeDriver) navegador).findElementByLinkText("nPerf").click();
 
 
