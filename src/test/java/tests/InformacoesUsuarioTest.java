@@ -27,13 +27,13 @@ public class InformacoesUsuarioTest {
             navegador.findElement(By.id("sb_form_q")).sendKeys("teste de velocidade");
 
             // Clicar no botão "Pesquisar"
-            ((ChromeDriver) navegador).findElementById("sa_5003").click();
+            ((ChromeDriver) navegador).findElementById("sb_form_q").click();
 
             //clicar no link que possui texto "www.minhaconexao.com.br"
             ((ChromeDriver) navegador).findElementByLinkText("Teste de Velocidade - TecMundo").click();
 
             //Clicar no texto "Iniciar o teste"
-            ((ChromeDriver) navegador).findElementByLinkText("nPerf").click();
+
 
 
         }catch (Exception e){
