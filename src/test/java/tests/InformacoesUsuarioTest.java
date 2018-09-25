@@ -1,6 +1,8 @@
 package tests;
 
 import static org.junit.Assert.*;
+
+import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,11 +15,10 @@ public class InformacoesUsuarioTest {
 
         try {
             //Abrindo o navegador
-
             System.setProperty("webdriver.chrome.driver", "c:\\Selenium\\Drivers\\chromedriver.exe");
             WebDriver navegador = new ChromeDriver();
 
-            //Navegando para a página do Google!
+            //Navegando para a página do Bing
             navegador.get("https://www.bing.com/");
 
             // Clicar no campo que possui o id "sb_form_q"
@@ -27,12 +28,16 @@ public class InformacoesUsuarioTest {
             navegador.findElement(By.id("sb_form_q")).sendKeys("teste de velocidade");
 
             // Clicar no botão "Pesquisar"
-            ((ChromeDriver) navegador).findElementById("sb_form_q").click();
+            ((ChromeDriver) navegador).findElementById("sb_form_go").click();
 
-            //clicar no link que possui texto "www.minhaconexao.com.br"
+            //clicar no link que possui texto "Teste de Velocidade - TecMundo"
             ((ChromeDriver) navegador).findElementByLinkText("Teste de Velocidade - TecMundo").click();
 
             //Clicar no texto "Iniciar o teste"
+
+            //Fechar navegador
+            navegador.quit();
+
 
 
 
@@ -41,7 +46,8 @@ public class InformacoesUsuarioTest {
             fail();
         }
 
-        //fechar o navegador
+
+
 
 
 
