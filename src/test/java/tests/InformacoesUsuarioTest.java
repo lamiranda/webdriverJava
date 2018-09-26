@@ -38,7 +38,7 @@ public class InformacoesUsuarioTest {
 
             //Clicar no texto "Fatos Principais"
             ((ChromeDriver) navegador).findElementByClassName("ntext").click();
-            navegador.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
 
             //Navegar para jornal do brasil
             navegador.get("http://www.jb.com.br/pais/2018/09/9871-lava-jato-esquema-de-propina-perdurou-por-tres-governos-no-parana.html");
@@ -53,9 +53,9 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementByName("q").sendKeys("política");
 
             //Clicar em botão "buscar"
-            navegador.findElement(By.id("q")).click();
-
-
+            navegador.findElement(By.id("q")).submit();
+            navegador.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+            
             //Fechar navegador
             navegador.quit();
 
