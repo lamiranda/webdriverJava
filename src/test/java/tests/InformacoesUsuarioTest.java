@@ -55,7 +55,7 @@ public class InformacoesUsuarioTest {
             //Clicar em botão "buscar"
             navegador.findElement(By.id("q")).submit();
             navegador.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-            
+
             //Fechar navegador
             navegador.quit();
 
