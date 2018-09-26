@@ -36,12 +36,29 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementByLinkText("Notícias sobre Portugal").click();
 
 
-            //Clicar no texto "Iniciar o teste"
+            //Clicar no texto "Fatos Principais"
             ((ChromeDriver) navegador).findElementByClassName("ntext").click();
             navegador.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
+            //Navegar para jornal do brasil
+            navegador.get("http://www.jb.com.br/pais/2018/09/9871-lava-jato-esquema-de-propina-perdurou-por-tres-governos-no-parana.html");
+
+            //acessar aba "país"
+            navegador.get(("http://www.jb.com.br/pais"));
+
+            //Clicar no campo de pesquisa
+            WebElement element = ((ChromeDriver) navegador).findElementByXPath("//*[@id=\"q\"]");
+
+            //Digitar no campo que possui o name "q"
+            ((ChromeDriver) navegador).findElementByName("q").sendKeys("política");
+
+            //Clicar em botão "buscar"
+            navegador.findElement(By.id("q")).click();
+
+
             //Fechar navegador
             navegador.quit();
+
 
 
 
