@@ -26,21 +26,24 @@ public class InformacoesUsuarioTest {
             // Clicar no campo que possui o id "sb_form_q"
             navegador.findElement(By.id("sb_form_q")).click();
 
-            // Digitar no campo que possui o id "sb_form_q" o texto "teste de velocidade"
-            navegador.findElement(By.id("sb_form_q")).sendKeys("teste de velocidade");
+            // Digitar no campo que possui o id "sb_form_q" o texto "portugal"
+            navegador.findElement(By.id("sb_form_q")).sendKeys("portugal");
 
             // Clicar no botão "Pesquisar"
-            ((ChromeDriver) navegador).findElementById("sb_form_go").click();
+            ((ChromeDriver) navegador).findElementByName("go").click();
 
-            //clicar no link que possui texto "Teste de Velocidade - TecMundo"
-            ((ChromeDriver) navegador).findElementByLinkText("Teste de Velocidade - TecMundo").click();
-            navegador.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+            //clicar no link que possui texto "Notícias sobre Portugal"
+            ((ChromeDriver) navegador).findElementByLinkText("Notícias sobre Portugal").click();
+
 
             //Clicar no texto "Iniciar o teste"
-            ((ChromeDriver) navegador).findElementByLinkText("Iniciar o teste").click();
+            ((ChromeDriver) navegador).findElementByClassName("ntext").click();
+            navegador.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
             //Fechar navegador
             navegador.quit();
+
+
 
 
 
