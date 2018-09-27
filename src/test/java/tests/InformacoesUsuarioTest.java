@@ -3,6 +3,7 @@ package tests;
 import static org.junit.Assert.*;
 
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,17 +13,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class InformacoesUsuarioTest {
+    private WebDriver navegador;
+
+    @Before
+    public void setup(){
+        //Abrindo o navegador
+        System.setProperty("webdriver.chrome.driver", "c:\\Selenium\\Drivers\\chromedriver.exe");
+        navegador = new ChromeDriver();
+
+        //Navegando para a página do Bing
+        navegador.get("https://www.bing.com/");
+    }
+
     @Test
-    public void testAdicionarUmaInformacaoAdicionalDoUsuario(){
+    public void testAdicionarUmaInformacaoAdicionalDoUsuario() {
 
         try {
-            //Abrindo o navegador
-            System.setProperty("webdriver.chrome.driver", "c:\\Selenium\\Drivers\\chromedriver.exe");
-            WebDriver navegador = new ChromeDriver();
-
-            //Navegando para a página do Bing
-            navegador.get("https://www.bing.com/");
-
             // Clicar no campo que possui o id "sb_form_q"
             navegador.findElement(By.id("sb_form_q")).click();
 
@@ -60,20 +66,12 @@ public class InformacoesUsuarioTest {
             navegador.quit();
 
 
-
-
-
-
-
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             fail();
         }
 
 
+        }
 
-
-
-
-
-}}
+    }
