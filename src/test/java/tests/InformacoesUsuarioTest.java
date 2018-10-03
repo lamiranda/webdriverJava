@@ -65,8 +65,8 @@ public class InformacoesUsuarioTest {
            //navegar para selenium easy
             navegador.get("http://www.seleniumeasy.com/test/");
 
-            //clicar no botão "página inicial de demonstração"
-            ((ChromeDriver) navegador).findElementByClassName("navbar-toggle").click();
+            //clicar no botão "Demo Home"
+            ((ChromeDriver) navegador).findElementByClassName("navbar-brand navbar-brand-centered").click();
 
             //Clicar no botão de "Começar a praticar"
             ((ChromeDriver) navegador).findElementById("btn_basic_example").click();
