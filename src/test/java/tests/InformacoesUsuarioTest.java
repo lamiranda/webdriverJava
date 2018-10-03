@@ -36,7 +36,7 @@ public class InformacoesUsuarioTest {
             navegador.findElement(By.id("sb_form_q")).sendKeys("portugal");
 
             // Clicar no botão "Pesquisar"
-            ((ChromeDriver) navegador).findElementByName("go").click();
+            ((ChromeDriver) navegador).findElementByName("go").submit();
 
             //clicar no link que possui texto "Notícias sobre Portugal"
             ((ChromeDriver) navegador).findElementByLinkText("Notícias sobre Portugal").click();
@@ -60,7 +60,13 @@ public class InformacoesUsuarioTest {
 
             //Clicar em botão "buscar"
             navegador.findElement(By.id("q")).submit();
-            navegador.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
+            //clicar no botão com id "cbb"
+            ((ChromeDriver) navegador).findElementById("cbb").click();
+
+            //clicar no botão com id "dk_botão"
+            ((ChromeDriver) navegador).findElementById("dk_botao").click();
+            
 
             //Fechar navegador
             navegador.quit();
