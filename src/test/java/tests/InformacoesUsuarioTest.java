@@ -36,7 +36,8 @@ public class InformacoesUsuarioTest {
             navegador.findElement(By.id("sb_form_q")).sendKeys("portugal");
 
             // Clicar no botão "Pesquisar"
-            ((ChromeDriver) navegador).findElementByName("go").submit();
+            ((ChromeDriver) navegador).findElementByClassName("b_searchboxSubmit").submit();
+
 
             //clicar no link que possui texto "Notícias sobre Portugal"
             ((ChromeDriver) navegador).findElementByLinkText("Notícias sobre Portugal").click();
@@ -63,6 +64,21 @@ public class InformacoesUsuarioTest {
 
            //navegar para selenium easy
             navegador.get("http://www.seleniumeasy.com/test/");
+
+            //clicar no botão "página inicial de demonstração"
+            ((ChromeDriver) navegador).findElementByClassName("navbar-toggle").click();
+
+            //Clicar no botão de "Começar a praticar"
+            ((ChromeDriver) navegador).findElementById("btn_basic_example").click();
+
+            //Clicar no botão "simples formulário de demontração"
+            ((ChromeDriver) navegador).findElementByClassName("list-group-item").click();
+
+            //Digitar o texto "Estou aprendendo a codificar scripts" com o botão de id "user-message"
+            ((ChromeDriver) navegador).findElementById("user-message").sendKeys("Estou aprendendo a codificar scripts");
+
+            //Clicar no botão "Mostrar mensagem"
+            ((ChromeDriver) navegador). findElementByClassName("btn btn-default").click();
 
 
             //Fechar navegador
