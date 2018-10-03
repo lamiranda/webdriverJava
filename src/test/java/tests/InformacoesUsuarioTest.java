@@ -59,14 +59,11 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementByName("q").sendKeys("política");
 
             //Clicar em botão "buscar"
-            navegador.findElement(By.id("q")).submit();
+            ((ChromeDriver) navegador).findElementByCssSelector("#campo_busca > input[type=\"submit\"]:nth-child(2)").submit();
 
-            //clicar no botão com id "cbb"
-            ((ChromeDriver) navegador).findElementById("cbb").click();
+           //navegar para selenium easy
+            navegador.get("http://www.seleniumeasy.com/test/");
 
-            //clicar no botão com id "dk_botão"
-            ((ChromeDriver) navegador).findElementById("dk_botao").click();
-            
 
             //Fechar navegador
             navegador.quit();
