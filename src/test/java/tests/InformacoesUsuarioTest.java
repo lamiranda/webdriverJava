@@ -52,16 +52,7 @@ public class InformacoesUsuarioTest {
 
             //acessar aba "país"
             navegador.get(("http://www.jb.com.br/pais"));
-
-            //Clicar no campo de pesquisa
-            WebElement element = ((ChromeDriver) navegador).findElementByXPath("//*[@id=\"q\"]");
-
-            //Digitar no campo que possui o name "q"
-            ((ChromeDriver) navegador).findElementByName("q").sendKeys("política");
-
-            //Clicar em botão "buscar"
-            ((ChromeDriver) navegador).findElementByCssSelector("#campo_busca > input[type=\"submit\"]:nth-child(2)").submit();
-
+            
            //navegar para selenium easy
             navegador.get("http://www.seleniumeasy.com/test/");
 
