@@ -65,14 +65,14 @@ public class InformacoesUsuarioTest {
            //navegar para selenium easy
             navegador.get("http://www.seleniumeasy.com/test/");
 
-            //clicar no botão "Demo Home"
-            ((ChromeDriver) navegador).findElementByClassName("navbar-brand navbar-brand-centered").click();
-
-            //Clicar no botão de "Começar a praticar"
-            ((ChromeDriver) navegador).findElementById("btn_basic_example").click();
+            //Clicar no botão de "Starting Practicing"
+            ((ChromeDriver) navegador).findElementById("btn btn-success btn-outline-rounded green").click();
 
             //Clicar no botão "simples formulário de demontração"
             ((ChromeDriver) navegador).findElementByClassName("list-group-item").click();
+
+            //Clicar no botão de "Proceed next"
+            ((ChromeDriver) navegador).findElementById("btn btn-success btn-outline-rounded green").click();
 
             //Digitar o texto "Estou aprendendo a codificar scripts" com o botão de id "user-message"
             ((ChromeDriver) navegador).findElementById("user-message").sendKeys("Estou aprendendo a codificar scripts");
