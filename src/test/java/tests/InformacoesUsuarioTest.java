@@ -63,7 +63,7 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementById("user-message").sendKeys("Estou aprendendo a codificar scripts");
 
             //Clicar no botão "Mostrar mensagem"
-            ((ChromeDriver) navegador).findElementByClassName("button.btn btn-default").click();
+            ((ChromeDriver) navegador).findElementByCssSelector("#get-input > button").click();
 
 
             //Fechar navegador
