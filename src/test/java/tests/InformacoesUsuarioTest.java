@@ -49,7 +49,7 @@ public class InformacoesUsuarioTest {
 
             //Navegar para jornal do brasil
             navegador.get("http://www.jb.com.br/pais/2018/09/9871-lava-jato-esquema-de-propina-perdurou-por-tres-governos-no-parana.html");
-            
+
            //navegar para selenium easy
             navegador.get("http://www.seleniumeasy.com/test/");
 
@@ -62,9 +62,14 @@ public class InformacoesUsuarioTest {
             //Clicar no botão "Mostrar mensagem"
             ((ChromeDriver) navegador).findElementByCssSelector("#get-input > button").click();
 
+            //Digitar um valor no campo "Enter a"
+            ((ChromeDriver) navegador).findElementById("sum1").sendKeys("vinte");
 
-            //Fechar navegador
-            navegador.quit();
+            //Digitar um valor no campo "Enter b"
+            ((ChromeDriver) navegador).findElementById("sum2").sendKeys("quarenta");
+
+            ((ChromeDriver) navegador).findElementByCssSelector("#gettotal > button").click();
+
 
 
         } catch (Exception e) {
