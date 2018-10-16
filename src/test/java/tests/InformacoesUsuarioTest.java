@@ -68,10 +68,15 @@ public class InformacoesUsuarioTest {
             //Digitar um valor no campo "Enter b"
             ((ChromeDriver) navegador).findElementById("sum2").sendKeys("quarenta");
 
+            //Clicar no botão de resultado
             ((ChromeDriver) navegador).findElementByCssSelector("#gettotal > button").click();
 
-            //fechar navegador
-            navegador.quit();
+            //Navegar para o site https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html
+            navegador.get("https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html");
+
+            //Clicar no botão "Get New User"
+            ((ChromeDriver) navegador).findElementById("Save").click();
+
 
 
 
