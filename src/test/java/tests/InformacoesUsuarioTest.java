@@ -70,6 +70,9 @@ public class InformacoesUsuarioTest {
 
             ((ChromeDriver) navegador).findElementByCssSelector("#gettotal > button").click();
 
+            //fechar navegador
+            navegador.quit();
+
 
 
         } catch (Exception e) {
