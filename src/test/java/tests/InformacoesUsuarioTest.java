@@ -36,8 +36,7 @@ public class InformacoesUsuarioTest {
             navegador.findElement(By.id("sb_form_q")).sendKeys("portugal");
 
             // Clicar no botão "Pesquisar"
-            ((ChromeDriver) navegador).findElementByClassName("b_searchboxSubmit").submit();
-
+            ((ChromeDriver) navegador).findElementByName("go").submit();
 
             //clicar no link que possui texto "Notícias sobre Portugal"
             ((ChromeDriver) navegador).findElementByLinkText("Notícias sobre Portugal").click();
@@ -75,7 +74,10 @@ public class InformacoesUsuarioTest {
             navegador.get("https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html");
 
             //Clicar no botão "Get New User"
-            ((ChromeDriver) navegador).findElementByClassName("btn btn-default").click();
+            ((ChromeDriver) navegador).findElementByCssSelector("#save");
+
+            //Clicar no botão "Get New User"
+            ((ChromeDriver) navegador).findElementById("Save").click();
 
 
 
