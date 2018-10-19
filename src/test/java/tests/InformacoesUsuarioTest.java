@@ -26,6 +26,7 @@ public class InformacoesUsuarioTest {
         navegador = new ChromeDriver();
 
         //Navegando para a página do Bing
+
         navegador.get("https://www.bing.com/");
     }
 
@@ -84,9 +85,7 @@ public class InformacoesUsuarioTest {
             ((ChromeDriver) navegador).findElementById("Save").click();
 
             WebDriver driver = new ChromeDriver();
-
-            Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(10, TimeUnit.SECONDS).pollingEvery(2, TimeUnit.SECONDS).ignoring(NoSuchElementException.class)
-                    .ignoring(StaleElementReferenceException.class);
+            
 
             //Clicar no botão "Get New User"
             ((ChromeDriver) navegador).findElementById("Save").click();
