@@ -77,13 +77,11 @@ public class InformacoesUsuarioTest {
 
             //Navegar para o site https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html
             navegador.get("https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html");
-
-            //Clicar no botão "Get New User"
-            ((ChromeDriver) navegador).findElementByCssSelector("#save");
+            
 
             //Clicar no botão "Get New User"
             ((ChromeDriver) navegador).findElementById("Save").click();
-            
+
 
 
 
