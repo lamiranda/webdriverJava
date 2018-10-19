@@ -38,7 +38,7 @@ public class InformacoesUsuarioTest {
             navegador.findElement(By.id("sb_form_q")).click();
 
             // Digitar no campo que possui o id "sb_form_q" o texto "portugal"
-            navegador.findElement(By.id("sb_form_go")).sendKeys("portugal");
+            ((ChromeDriver) navegador).findElementByXPath("//*[@id=\"sb_form_go\"]").sendKeys("Portugal");
 
             // Clicar no botão "Pesquisar"
             ((ChromeDriver) navegador).findElementByName("go").submit();
