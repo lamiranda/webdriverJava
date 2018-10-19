@@ -38,7 +38,7 @@ public class InformacoesUsuarioTest {
             navegador.findElement(By.id("sb_form_q")).click();
 
             // Digitar no campo que possui o id "sb_form_q" o texto "portugal"
-            navegador.findElement(By.id("sb_form_q")).sendKeys("portugal");
+            navegador.findElement(By.id("sb_form_go")).sendKeys("portugal");
 
             // Clicar no botão "Pesquisar"
             ((ChromeDriver) navegador).findElementByName("go").submit();
@@ -77,7 +77,7 @@ public class InformacoesUsuarioTest {
 
             //Navegar para o site https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html
             navegador.get("https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html");
-            
+
 
             //Clicar no botão "Get New User"
             ((ChromeDriver) navegador).findElementById("Save").click();
