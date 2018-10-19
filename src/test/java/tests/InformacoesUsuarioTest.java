@@ -49,10 +49,7 @@ public class InformacoesUsuarioTest {
 
             //Clicar no texto "Fatos Principais"
             ((ChromeDriver) navegador).findElementByClassName("ntext").click();
-
-
-            //Navegar para jornal do brasil
-            navegador.get("http://www.jb.com.br/pais/2018/09/9871-lava-jato-esquema-de-propina-perdurou-por-tres-governos-no-parana.html");
+            
 
            //navegar para selenium easy
             navegador.get("http://www.seleniumeasy.com/test/");
