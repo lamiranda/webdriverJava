@@ -49,7 +49,7 @@ public class InformacoesUsuarioTest {
 
             //Clicar no texto "Fatos Principais"
             ((ChromeDriver) navegador).findElementByClassName("ntext").click();
-            
+
 
            //navegar para selenium easy
             navegador.get("http://www.seleniumeasy.com/test/");
@@ -77,7 +77,11 @@ public class InformacoesUsuarioTest {
 
 
             //Clicar no botão "Get New User"
-            ((ChromeDriver) navegador).findElementById("Save").click();
+            ((ChromeDriver) navegador).findElementByXPath("//*[@id=\"save\"]").click();
+
+            //Clicar no botão "Get New User"
+            ((ChromeDriver) navegador).findElementByXPath("//*[@id=\"save\"]").click();
+
 
 
 
