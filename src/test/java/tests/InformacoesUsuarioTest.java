@@ -83,12 +83,7 @@ public class InformacoesUsuarioTest {
 
             //Clicar no botão "Get New User"
             ((ChromeDriver) navegador).findElementById("Save").click();
-
-            WebDriver driver = new ChromeDriver();
             
-
-            //Clicar no botão "Get New User"
-            ((ChromeDriver) navegador).findElementById("Save").click();
 
 
 
